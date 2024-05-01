@@ -1,0 +1,134 @@
+*,
+body {
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.search {
+
+  vertical-align: middle;
+}
+
+nav {
+  height: 70px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: rgb(0,0,0);
+background: linear-gradient(41deg, rgba(0,0,0,1) 0%, rgba(61,61,61,1) 41%, rgba(43,43,43,1) 100%);
+  color: #eee;
+}
+
+h2 {
+  /* font-size: 20px; */
+  font-family: sans-serif;
+}
+
+.search input {
+  padding: 10px;
+}
+
+.search button {
+  padding: 10px 12px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  padding: 30px 200px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: rgb(191,191,191);
+background: linear-gradient(41deg, rgba(191,191,191,1) 0%, rgba(228,221,226,1) 41%, rgba(210,210,210,1) 100%);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-family: serif;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 2px;
+  font-family: serif;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  font-family: serif;
+}
+
+.control {
+  margin-bottom: 10px;
+}
+
+.addNote {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background: rgb(255,0,0);
+  background: linear-gradient(41deg, rgba(255,0,0,1) 0%, rgba(255,0,127,1) 41%, rgba(237,0,255,1) 100%);
+  cursor: pointer;
+  font-weight: 400;
+  color: white;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.notes-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.note {
+  width: 310px;
+  background: rgb(191,191,191);
+background: linear-gradient(41deg, rgba(191,191,191,1) 0%, rgba(228,221,226,1) 41%, rgba(210,210,210,1) 100%);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 18px #3a3a3a;
+}
+
+.note .delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+
+  } 
+
+.madeby {
+
+  background-color: #000000;
+}
