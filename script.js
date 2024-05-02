@@ -3,6 +3,7 @@ const titleR = document.getElementById('title');
 const noteR = document.getElementById('note');
 const container = document.querySelector(".notes-container");
 let notes = [];
+let del = "";
 
 addNote.addEventListener("mousedown", () => {
     addNote.setAttribute("style","background: linear-gradient(41deg, rgba(200,0,0,1) 0%, rgba(200,0,72,1) 41%, rgba(182,0,200,1) 100%)");
@@ -43,6 +44,7 @@ addNote.addEventListener("mouseup", () => {
     }
     
     function refreshNotes() {
+        
         container.innerHTML= "";
         notes.forEach((note, index) => {
             const notebox = document.createElement("div");
@@ -62,7 +64,12 @@ addNote.addEventListener("mouseup", () => {
             noteboxdelete.appendChild(image);
 
             noteboxdelete.addEventListener("click", () => {
-                    notes.splice(index, 1);
+                    del = prompt("Are you sure you want to delete this note? (y/n)");
+                    console.log(del.toUpperCase());
+                    if (del.toUpperCase() == "Y") {
+                        notes.splice(index, 1);
+                        
+                    };
                     refreshNotes();
             });
 
